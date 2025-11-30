@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/prayer_book_primary</item>
+        <item name="colorPrimaryDark">@color/prayer_book_primary_dark</item>
+        <item name="colorAccent">@color/prayer_book_accent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+    </style>
+
+    <style name="OverflowButtonStyle" parent="AppTheme">
+        <item name="android:src">@drawable/ic_more_vert</item>
+    </style>
+</resources>
