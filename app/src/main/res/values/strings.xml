@@ -2,7 +2,7 @@
 <resources
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingTranslation">
-    <string name="app_name">Prayer Book</string>
+    <string name="app_name">Kotlin Prayer Book</string>
     <string name="prayers">Prayers</string>
     <string name="about">About</string>
     <string name="search">Search</string>
@@ -35,6 +35,7 @@
     <string name="speech_rate">Speech Rate</string>
     <string name="speech_pitch">Speech Pitch</string>
     <string name="speak_prayer_on_open">Speak prayer on open</string>
+    <string name="speech_voice">Speech Voice</string>
 
 
     <plurals name="number_of_words">

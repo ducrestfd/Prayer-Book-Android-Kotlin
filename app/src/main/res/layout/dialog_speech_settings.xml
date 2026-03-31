@@ -62,4 +62,18 @@
         android:stepSize="0.1"
         android:value="1.0" />
 
+    <!-- Voice Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/speech_voice"
+        android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+    <Spinner
+        android:id="@+id/voice_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
 </LinearLayout>

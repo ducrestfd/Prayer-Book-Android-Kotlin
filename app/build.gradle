@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id("org.jetbrains.kotlin.plugin.compose") version "2.2.21" // this version matches your Kotlin version
+    id("org.jetbrains.kotlin.plugin.compose") version "2.3.20" // this version matches your Kotlin version
 }
 
 
@@ -21,7 +21,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'com.arashpayan.prayerbook'
+        applicationId 'com.myhobby.prayerbook'
         minSdkVersion 23
         targetSdk 36
         versionCode 25
@@ -33,13 +33,19 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
-    namespace 'com.arashpayan.prayerbook'
+    namespace 'com.myhobby.prayerbook'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
 }
 
@@ -50,12 +56,12 @@ dependencies {
     implementation 'com.google.android.material:material:1.13.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     implementation 'com.samskivert:jmustache:1.16'
-    implementation 'androidx.core:core-ktx:1.17.0'
-    implementation 'androidx.activity:activity-ktx:1.11.0'
-    implementation 'androidx.databinding:databinding-runtime:8.13.1'
+    implementation 'androidx.core:core-ktx:1.18.0'
+    implementation 'androidx.activity:activity-ktx:1.13.0'
+    implementation 'androidx.databinding:databinding-runtime:9.1.0'
 
     // Compose Bill of Materials (BOM) - Manages versions for other Compose libraries
-    def composeBom = platform('androidx.compose:compose-bom:2025.10.01')
+    def composeBom = platform('androidx.compose:compose-bom:2026.03.01')
     implementation composeBom
     androidTestImplementation composeBom
 
@@ -70,7 +76,7 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
 
     // Integration with Activities
-    implementation 'androidx.activity:activity-compose:1.11.0'
+    implementation 'androidx.activity:activity-compose:1.13.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.3.0'
