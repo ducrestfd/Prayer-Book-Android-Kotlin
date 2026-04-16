@@ -1,3 +1,5 @@
+Note:  This project is an intermediate project created to be a bridge between the inital Java version and the later Swift version.  As such, it has not been subject to the more riggerous testing of either the Java version or the Swift version.  
+
 Introduction
 ------------
 Prayer Book is an Android app that contains prayers from the writings of the Bahá'í Faith. While the code is covered by the GPL, the Bahá'í sacred writings are copyright Bahá'í International Community (source: https://reference.bahai.org).
