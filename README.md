@@ -1,4 +1,4 @@
-Note:  This project is an intermediate project created to be a bridge between the inital Java version and the later Swift version.  As such, it has not been subject to the more riggerous testing of either the Java version or the Swift version.  
+Note:  This project is an intermediate project created to be a bridge between the inital Java version and the later Swift version.  As such, it is complete in certain features and has not been subject to the more riggerous testing of either the Java version or the Swift version.  
 
 Introduction
 ------------
